@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Upload image</title>
+    </head>
+    <body>
+    <h1>Upload image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a picture:</label>
+        <input type="file" name="file" id="file">
+        <label for="problem">Choose a problem:</label>
+        <select id="problem" name="problem">
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+</html>
